@@ -32,7 +32,7 @@ public class MultiClientServer extends JPanel {
         msgTxt = new JTextField();
         bottomPanel.add(msgTxt, BorderLayout.CENTER);
 
-        JButton btnSend = new supportview.ButtonGradient();
+        JButton btnSend = new JButton();
         btnSend.setText("Send");
         btnSend.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

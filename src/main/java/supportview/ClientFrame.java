@@ -1,9 +1,6 @@
 package supportview;
 
-import javax.swing.*;
-
-import supportview.ButtonGradient;
-
+import javax.swing.*; 
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -35,7 +32,7 @@ public class ClientFrame extends JPanel {
         msgTxt = new JTextField();
         bottomPanel.add(msgTxt, BorderLayout.CENTER);
 
-        ButtonGradient btnSend = new supportview.ButtonGradient();
+        JButton btnSend = new JButton();
         btnSend.setText("Send");
         btnSend.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
