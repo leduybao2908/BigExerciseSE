@@ -5,17 +5,17 @@ import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import com.mysql.cj.jdbc.Driver;
+import org.postgresql.Driver;
 
 public class JDBCUtil {
 	public static Connection getConnection() {
 		Connection c = null;
 		
 		try {
-			DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+			DriverManager.registerDriver(new org.postgresql.Driver());
 			
-			String url = "jdbc:mySQL://localhost:3306/badminton_shop";
-			String username = "root";
+			String url = "jdbc:postgresql://localhost:5432/badminton_shop";
+			String username = "postgres";
 			String password = "29082005";
 			
 			// Tạo kết nối
